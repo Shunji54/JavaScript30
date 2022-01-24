@@ -45,6 +45,26 @@
   </style>
 
   <script>
+    const inputs = document.querySelectorAll('input');
+    const spacing = inputs[0];
+    const blur = inputs[1];
+    const baseColor = inputs[2];
+
+    for (let i = 0; i < inputs.length; i++) {
+      console.log(inputs[i].value);
+    } 
+
+    function inputHandler() {
+      console.log("input")
+      console.log(this.value);
+    }
+
+    function changeSpacing() {
+      const image = document.querySelector('img');
+      console.log(`Changement du spacing de ${this.value}`)
+      
+    }
+
   </script>
 
 </body>
